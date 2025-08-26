@@ -2,6 +2,7 @@ import { NavLink, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Movies from "./pages/Movies";
 import './App.css'
 
 function App() {
@@ -12,10 +13,12 @@ function App() {
         <header style={{ display: "flex", gap: 12, marginBottom: 24 }}>
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/movies">Movies</NavLink>
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/movies" element={<Movies />} />
           <Route path="*" element={<NotFound />} />
       </Routes>
       </div>
