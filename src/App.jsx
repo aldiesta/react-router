@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Movies from "./pages/Movies";
+import MovieDetail from "./pages/MovieDetail";
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<MovieDetail />} />
           <Route path="*" element={<NotFound />} />
       </Routes>
       </div>
